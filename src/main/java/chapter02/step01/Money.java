@@ -12,12 +12,12 @@ public class Money {
         return new Money(BigDecimal.valueOf(amount));
     }
 
-    public static Money wons(double amount) {
-        return new Money(BigDecimal.valueOf(amount));
+    public Money(BigDecimal amount) {
+        this.amount = amount;
     }
 
-    Money(BigDecimal amount) {
-        this.amount = amount;
+    public static Money wons(double amount) {
+        return new Money(BigDecimal.valueOf(amount));
     }
 
     public Money plus(Money amount) {

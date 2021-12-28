@@ -3,17 +3,14 @@ package chapter02.step01;
 import java.time.LocalDateTime;
 
 public class Screening {
+    private final Movie movie;
+    private final int sequence;
+    private final LocalDateTime whenScreened;
 
-    private Movie movie;
-    private int sequence;
-    private LocalDateTime whenScreened;
-    private DiscountPolicy discountPolicy;
-
-    public Screening(Movie movie, int sequence, LocalDateTime whenScreened, DiscountPolicy discountPolicy) {
+    public Screening(Movie movie, int sequence, LocalDateTime whenScreened) {
         this.movie = movie;
         this.sequence = sequence;
         this.whenScreened = whenScreened;
-        this.discountPolicy = discountPolicy;
     }
 
     public LocalDateTime getStartTime() {

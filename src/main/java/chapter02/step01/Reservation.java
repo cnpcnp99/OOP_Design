@@ -1,7 +1,6 @@
 package chapter02.step01;
 
 public class Reservation {
-
     private Customer customer;
     private Screening screening;
     private Money fee;

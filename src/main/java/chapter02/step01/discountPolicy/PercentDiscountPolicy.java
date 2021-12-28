@@ -1,17 +1,16 @@
-package chapter02.step01.pricing;
+package chapter02.step01.discountPolicy;
 
-import chapter02.step01.DiscountCondition;
-import chapter02.step01.DiscountPolicy;
 import chapter02.step01.Money;
 import chapter02.step01.Screening;
+import chapter02.step01.discountCondition.DiscountCondition;
 
 import java.util.List;
 
-public class PercentDiscountPolicy extends DiscountPolicy {
+public class PercentDiscountPolicy extends DiscountPolicy{
     private double percent;
 
-    public PercentDiscountPolicy(List<DiscountCondition> conditons, double percent) {
-        super(conditons);
+    public PercentDiscountPolicy(double percent, DiscountCondition... conditions) {
+        super(conditions);
         this.percent = percent;
     }
 

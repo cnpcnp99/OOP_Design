@@ -1,9 +1,8 @@
-package chapter02.step01.pricing;
+package chapter02.step01.discountCondition;
 
-import chapter02.step01.DiscountCondition;
 import chapter02.step01.Screening;
 
-public class SequenceCondition implements DiscountCondition {
+public class SequenceCondition implements DiscountCondition{
 
     private int sequence;
 
